@@ -1,6 +1,6 @@
 import React from 'react'
 import './background.css'
-import Login from '../../../pages/Login'
+import Login from '../../pages/Login'
 import BackgroundCircle from './backgroundCircle'
 
 interface props {
