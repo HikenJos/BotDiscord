@@ -5,9 +5,8 @@ import ReactDOM from 'react-dom/client'
 // import App from './App'
 // import Login from './components/login/Login'
 import './index.css'
-import Background from './components/login/prueba/prueba'
-// import Background from './components/login/prueba'
-console.log(themes)
+import Background from './components/login/background/background'
+
 function Index (): JSX.Element {
   return (
   /*     <App /> */

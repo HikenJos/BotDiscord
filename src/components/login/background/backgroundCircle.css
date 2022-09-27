@@ -1,21 +1,4 @@
-@keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
-  }
-}
-
-.background {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: #06071e;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.background .hola {
+ .circle {
   width: 5vmin;
   height: 5vmin;
   border-radius: 5vmin;
@@ -29,7 +12,7 @@
 }
 
 
-.background .hola:nth-child(0) {
+ .circle:nth-child(0) {
   color: #ffb400;
   top: 19%;
   left: 67%;
@@ -39,7 +22,7 @@
   box-shadow: 10vmin 0 1.4797308440815675vmin currentColor;
 }
 
-.background .hola:nth-child(1) {
+ .circle:nth-child(1) {
   color: #9155fd;
   top: 74%;
   left: 39%;
@@ -49,7 +32,7 @@
   box-shadow: 10vmin 0 1.5432681269860926vmin currentColor;
 }
 
-.background .hola:nth-child(2) {
+ .circle:nth-child(2) {
   color: #9155fd;
   top: 82%;
   left: 1%;
@@ -59,7 +42,7 @@
   box-shadow: -10vmin 0 1.7876862733274852vmin currentColor;
 }
 
-.background .hola:nth-child(3) {
+ .circle:nth-child(3) {
   color: #ffb400;
   top: 23%;
   left: 75%;
@@ -69,7 +52,7 @@
   box-shadow: -10vmin 0 1.6860459804311194vmin currentColor;
 }
 
-.background .hola:nth-child(4) {
+ .circle:nth-child(4) {
   color: #9155fd;
   top: 57%;
   left: 17%;
@@ -79,7 +62,7 @@
   box-shadow: -10vmin 0 1.9880821451289812vmin currentColor;
 }
 
-.background .hola:nth-child(5) {
+ .circle:nth-child(5) {
   color: #9155fd;
   top: 99%;
   left: 30%;
@@ -89,7 +72,7 @@
   box-shadow: -10vmin 0 1.3377937631851609vmin currentColor;
 }
 
-.background .hola:nth-child(6) {
+ .circle:nth-child(6) {
   color: #9155fd;
   top: 81%;
   left: 40%;
@@ -99,7 +82,7 @@
   box-shadow: -10vmin 0 1.8691489146431532vmin currentColor;
 }
 
-.background .hola:nth-child(7) {
+ .circle:nth-child(7) {
   color: #9155fd;
   top: 10%;
   left: 50%;
@@ -109,7 +92,7 @@
   box-shadow: -10vmin 0 2.148809214989363vmin currentColor;
 }
 
-.background .hola:nth-child(8) {
+ .circle:nth-child(8) {
   color: #ffb400;
   top: 97%;
   left: 1%;
@@ -119,7 +102,7 @@
   box-shadow: -10vmin 0 1.9469922890554476vmin currentColor;
 }
 
-.background .hola:nth-child(9) {
+ .circle:nth-child(9) {
   color: #9155fd;
   top: 25%;
   left: 95%;
@@ -129,7 +112,7 @@
   box-shadow: 10vmin 0 1.8492858915665793vmin currentColor;
 }
 
-.background .hola:nth-child(10) {
+ .circle:nth-child(10) {
   color: #ffb400;
   top: 33%;
   left: 88%;
@@ -139,7 +122,7 @@
   box-shadow: 10vmin 0 2.208918348989008vmin currentColor;
 }
 
-.background .hola:nth-child(11) {
+ .circle:nth-child(11) {
   color: #ffb400;
   top: 7%;
   left: 12%;
@@ -149,7 +132,7 @@
   box-shadow: 10vmin 0 1.8472325442246933vmin currentColor;
 }
 
-.background .hola:nth-child(12) {
+ .circle:nth-child(12) {
   color: #9155fd;
   top: 36%;
   left: 34%;
@@ -159,7 +142,7 @@
   box-shadow: -10vmin 0 1.4792866511160856vmin currentColor;
 }
 
-.background .hola:nth-child(13) {
+ .circle:nth-child(13) {
   color: #9155fd;
   top: 57%;
   left: 3%;
@@ -169,7 +152,7 @@
   box-shadow: 10vmin 0 1.914112860800404vmin currentColor;
 }
 
-.background .hola:nth-child(14) {
+ .circle:nth-child(14) {
   color: #9155fd;
   top: 71%;
   left: 32%;
@@ -179,7 +162,7 @@
   box-shadow: -10vmin 0 2.187649462838329vmin currentColor;
 }
 
-.background .hola:nth-child(15) {
+ .circle:nth-child(15) {
   color: #9155fd;
   top: 88%;
   left: 26%;
@@ -189,7 +172,7 @@
   box-shadow: -10vmin 0 2.0063405588135597vmin currentColor;
 }
 
-.background .hola:nth-child(16) {
+ .circle:nth-child(16) {
   color: #ffb400;
   top: 47%;
   left: 30%;
@@ -199,7 +182,7 @@
   box-shadow: 10vmin 0 1.8438525080696084vmin currentColor;
 }
 
-.background .hola:nth-child(17) {
+ .circle:nth-child(17) {
   color: #ffb400;
   top: 41%;
   left: 92%;
@@ -209,7 +192,7 @@
   box-shadow: 10vmin 0 2.1548246249095664vmin currentColor;
 }
 
-.background .hola:nth-child(18) {
+ .circle:nth-child(18) {
   color: #9155fd;
   top: 93%;
   left: 82%;
@@ -219,7 +202,7 @@
   box-shadow: -10vmin 0 1.5573492587194486vmin currentColor;
 }
 
-.background .hola:nth-child(19) {
+ .circle:nth-child(19) {
   color: #9155fd;
   top: 42%;
   left: 72%;
@@ -229,7 +212,7 @@
   box-shadow: 10vmin 0 1.7217836387898835vmin currentColor;
 }
 
-.background .hola:nth-child(20) {
+ .circle:nth-child(20) {
   color: #9155fd;
   top: 29%;
   left: 100%;
@@ -239,7 +222,7 @@
   box-shadow: -10vmin 0 1.9065862667809998vmin currentColor;
 }
 
-.background .hola:nth-child(21) {
+ .circle:nth-child(21) {
   color: #ffb400;
   top: 63%;
   left: 23%;
@@ -249,7 +232,7 @@
   box-shadow: 10vmin 0 2.201371596487694vmin currentColor;
 }
 
-.background .hola:nth-child(22) {
+ .circle:nth-child(22) {
   color: #9155fd;
   top: 49%;
   left: 44%;
@@ -259,7 +242,7 @@
   box-shadow: 10vmin 0 1.9154273648933027vmin currentColor;
 }
 
-.background .hola:nth-child(23) {
+ .circle:nth-child(23) {
   color: #ffb400;
   top: 24%;
   left: 10%;
@@ -269,7 +252,7 @@
   box-shadow: -10vmin 0 1.5750033603491398vmin currentColor;
 }
 
-.background .hola:nth-child(24) {
+ .circle:nth-child(24) {
   color: #9155fd;
   top: 62%;
   left: 25%;
@@ -279,7 +262,7 @@
   box-shadow: -10vmin 0 1.4383035819767338vmin currentColor;
 }
 
-.background .hola:nth-child(25) {
+ .circle:nth-child(25) {
   color: #9155fd;
   top: 27%;
   left: 48%;
@@ -289,7 +272,7 @@
   box-shadow: 10vmin 0 2.0893973798091134vmin currentColor;
 }
 
-.background .hola:nth-child(26) {
+ .circle:nth-child(26) {
   color: #9155fd;
   top: 8%;
   left: 82%;
@@ -299,7 +282,7 @@
   box-shadow: 10vmin 0 2.1499333088065518vmin currentColor;
 }
 
-.background .hola:nth-child(27) {
+ .circle:nth-child(27) {
   color: #9155fd;
   top: 49%;
   left: 91%;
@@ -309,7 +292,7 @@
   box-shadow: 10vmin 0 1.7579700619559002vmin currentColor;
 }
 
-.background .hola:nth-child(28) {
+ .circle:nth-child(28) {
   color: #ffb400;
   top: 31%;
   left: 32%;
@@ -319,7 +302,7 @@
   box-shadow: -10vmin 0 2.1994029550181295vmin currentColor;
 }
 
-.background .hola:nth-child(29) {
+ .circle:nth-child(29) {
   color: #9155fd;
   top: 90%;
   left: 33%;
@@ -329,7 +312,7 @@
   box-shadow: 10vmin 0 2.0882765368371423vmin currentColor;
 }
 
-.background .hola:nth-child(30) {
+ .circle:nth-child(30) {
   color: #ffb400;
   top: 61%;
   left: 17%;
@@ -339,7 +322,7 @@
   box-shadow: 10vmin 0 2.2039644638797036vmin currentColor;
 }
 
-.background .hola:nth-child(31) {
+ .circle:nth-child(31) {
   color: #ffb400;
   top: 99%;
   left: 71%;
@@ -349,7 +332,7 @@
   box-shadow: 10vmin 0 1.9275308600036423vmin currentColor;
 }
 
-.background .hola:nth-child(32) {
+ .circle:nth-child(32) {
   color: #ffb400;
   top: 8%;
   left: 27%;
@@ -359,7 +342,7 @@
   box-shadow: -10vmin 0 1.942994563092138vmin currentColor;
 }
 
-.background .hola:nth-child(33) {
+ .circle:nth-child(33) {
   color: #9155fd;
   top: 31%;
   left: 44%;
@@ -369,7 +352,7 @@
   box-shadow: 10vmin 0 2.032406389033644vmin currentColor;
 }
 
-.background .hola:nth-child(34) {
+ .circle:nth-child(34) {
   color: #9155fd;
   top: 38%;
   left: 43%;
@@ -379,7 +362,7 @@
   box-shadow: -10vmin 0 2.2407888811068197vmin currentColor;
 }
 
-.background .hola:nth-child(35) {
+ .circle:nth-child(35) {
   color: #9155fd;
   top: 86%;
   left: 88%;
@@ -389,7 +372,7 @@
   box-shadow: 10vmin 0 1.3496141579378953vmin currentColor;
 }
 
-.background .hola:nth-child(36) {
+ .circle:nth-child(36) {
   color: #9155fd;
   top: 74%;
   left: 78%;
@@ -399,7 +382,7 @@
   box-shadow: -10vmin 0 2.2459097925721734vmin currentColor;
 }
 
-.background .hola:nth-child(37) {
+ .circle:nth-child(37) {
   color: #9155fd;
   top: 17%;
   left: 1%;
@@ -409,7 +392,7 @@
   box-shadow: 10vmin 0 1.3609917024709843vmin currentColor;
 }
 
-.background .hola:nth-child(38) {
+ .circle:nth-child(38) {
   color: #9155fd;
   top: 11%;
   left: 73%;
@@ -419,7 +402,7 @@
   box-shadow: 10vmin 0 1.4763414240234327vmin currentColor;
 }
 
-.background .hola:nth-child(39) {
+ .circle:nth-child(39) {
   color: #ffb400;
   top: 92%;
   left: 36%;
