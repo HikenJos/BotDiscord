@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'
 // import App from './App'
 // import Login from './components/login/Login'
 import './index.css'
-import Background from './components/login/background/background'
+import Background from './components/background/background'
 
 function Index (): JSX.Element {
   return (
