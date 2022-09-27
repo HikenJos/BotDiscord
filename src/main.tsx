@@ -1,18 +1,21 @@
 import { ChakraProvider } from '@chakra-ui/react'
+import themes from './theme'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import './index.css'
+import PasswordRecovery from './pages/PasswordRecovery'
 
 function Index (): JSX.Element {
   return (
-    <App />
+    <>
+      <PasswordRecovery />
+    </>
   )
 }
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <ChakraProvider>
+    <ChakraProvider theme={themes}>
       <Index />
     </ChakraProvider>
   </React.StrictMode>
