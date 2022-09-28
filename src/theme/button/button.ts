@@ -27,6 +27,28 @@ const Button: ComponentStyleConfig = {
         boxShadow: 'base'
       }
     },
+    btnTransparent: {
+      fontSize: '1.5rem',
+      width: '100%',
+      color: 'font',
+      _hover: {
+        color: 'primary'
+      }
+    },
+    btnBack: {
+      fontSize: '1.3rem',
+      width: '100%',
+      position: 'absolute',
+      bottom: '0',
+      left: '0',
+      color: 'font',
+      padding: '2rem',
+      borderTop: '1px',
+      borderColor: 'gray.300',
+      _hover: {
+        background: 'gray.300'
+      }
+    },
     defaultProps: {
       variant: 'btnForm'
     }

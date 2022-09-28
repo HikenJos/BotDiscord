@@ -1,4 +1,3 @@
-import React from 'react'
 import { Text, Heading, Flex, Icon } from '@chakra-ui/react'
 import { SiProbot } from 'react-icons/si'
 

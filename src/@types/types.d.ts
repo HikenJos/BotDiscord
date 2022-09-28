@@ -1,5 +1,5 @@
 interface TypeComponent {
-  JSX: JSX.Element
+  children: JSX.Element | JSX.Element[]
 }
 
 export { TypeComponent }

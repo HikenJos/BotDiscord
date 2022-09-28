@@ -1,4 +1,3 @@
-import React from 'react'
 import './backgroundCircle.css'
 
 function BackgroundCircle (): JSX.Element {

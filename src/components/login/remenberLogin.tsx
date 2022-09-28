@@ -1,5 +1,5 @@
-import React from 'react'
 import { Flex, Checkbox, Spacer, Link } from '@chakra-ui/react'
+import { Link as Linker } from 'react-router-dom'
 
 function RemenberLogin (): JSX.Element {
   return (
@@ -12,12 +12,12 @@ function RemenberLogin (): JSX.Element {
           color='font'
         >Remember Me</Checkbox>
         <Spacer />
-        <Link color='primary'
+        <Link as={Linker} color='primary'
           fontSize='1.2rem'
           _hover={{ textDecoration: 'none' }}
-          href='#'>Forgot Password?</Link>
+          to='/password-recovery'>Forgot Password?</Link>
       </Flex>
     </>
   )
 }
-export default RemenberLogin
+export { RemenberLogin }

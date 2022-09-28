@@ -1,7 +1,6 @@
-import React from 'react'
 import { Input } from '@chakra-ui/react'
 
-function InputLogin (): JSX.Element {
+export function InputLogin (): JSX.Element {
   return (
     <>
       <Input

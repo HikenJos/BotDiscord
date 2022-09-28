@@ -1,4 +1,3 @@
-import React from 'react'
 import { IconButton, Center } from '@chakra-ui/react'
 import { AiOutlineGoogle } from 'react-icons/ai'
 
@@ -16,4 +15,4 @@ function IconFooter (): JSX.Element {
   )
 }
 
-export default IconFooter
+export { IconFooter }
