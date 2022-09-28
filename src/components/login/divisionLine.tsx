@@ -1,4 +1,3 @@
-import React from 'react'
 import { Text, Flex } from '@chakra-ui/react'
 
 function DivisionLine (): JSX.Element {
@@ -21,4 +20,4 @@ function DivisionLine (): JSX.Element {
     </>
   )
 }
-export default DivisionLine
+export { DivisionLine }

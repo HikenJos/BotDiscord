@@ -3,20 +3,12 @@ import themes from './theme'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import PasswordRecovery from './pages/PasswordRecovery'
-
-function Index (): JSX.Element {
-  return (
-    <>
-      <PasswordRecovery />
-    </>
-  )
-}
+import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ChakraProvider theme={themes}>
-      <Index />
+      <App />
     </ChakraProvider>
   </React.StrictMode>
 )

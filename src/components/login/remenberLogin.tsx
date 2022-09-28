@@ -1,4 +1,3 @@
-import React from 'react'
 import { Flex, Checkbox, Spacer, Link } from '@chakra-ui/react'
 
 function RemenberLogin (): JSX.Element {
@@ -15,9 +14,9 @@ function RemenberLogin (): JSX.Element {
         <Link color='primary'
           fontSize='1.2rem'
           _hover={{ textDecoration: 'none' }}
-          href='#'>Forgot Password?</Link>
+          href='/password-recovery'>Forgot Password?</Link>
       </Flex>
     </>
   )
 }
-export default RemenberLogin
+export { RemenberLogin }

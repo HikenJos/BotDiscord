@@ -1,4 +1,3 @@
-import React from 'react'
 import { Alert, AlertIcon, AlertTitle } from '@chakra-ui/react'
 
 function AlertEmailFail (): JSX.Element {

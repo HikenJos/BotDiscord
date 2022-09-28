@@ -1,11 +1,5 @@
-import React from 'react'
 import { Button, Box, Container } from '@chakra-ui/react'
-import DivisionLine from '../components/login/divisionLine'
-import HeaderLogin from '../components/login/headerLogin'
-import IconFooter from '../components/login/iconFooter'
-import InputLogin from '../components/login/inputLogin'
-import RemenberLogin from '../components/login/remenberLogin'
-import SignLogin from '../components/login/signLogin'
+import { DivisionLine, HeaderLogin, IconFooter, InputLogin, RemenberLogin, SignLogin } from '@/components'
 
 function Login (): JSX.Element {
   return (

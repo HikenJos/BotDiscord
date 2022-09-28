@@ -1,4 +1,3 @@
-import React from 'react'
 import { Text, Link } from '@chakra-ui/react'
 
 function SignLogin (): JSX.Element {
@@ -19,4 +18,4 @@ function SignLogin (): JSX.Element {
   )
 }
 
-export default SignLogin
+export { SignLogin }

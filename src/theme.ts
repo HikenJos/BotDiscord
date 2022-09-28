@@ -1,6 +1,6 @@
 import { extendTheme } from '@chakra-ui/react'
-import Button from './themes/button/button'
-import Text from './themes/paragraph/text'
+import Button from './theme/button/button'
+import Text from './theme/paragrah/text'
 
 const themes = extendTheme({
   components: {

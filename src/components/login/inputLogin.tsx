@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Input } from '@chakra-ui/react'
-import emailValidation from '../../functions/emailValidation'
+import emailValidation from '@/functions/emailValidation'
 import { AlertEmailFail, AlertEmailTrue } from '../alerts/alert'
 
 function InputLogin (): JSX.Element {
@@ -50,4 +50,4 @@ function InputLogin (): JSX.Element {
   )
 }
 
-export default InputLogin
+export { InputLogin }
