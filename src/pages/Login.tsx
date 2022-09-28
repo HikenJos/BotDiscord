@@ -27,19 +27,12 @@ function Login (): JSX.Element {
           bg='gray.100'>
 
           <HeaderLogin />
-
           <InputLogin />
-
           <RemenberLogin />
-
           <Button variant='btnForm'>LOGIN</Button>
-
           <SignLogin />
-
           <DivisionLine />
-
           <IconFooter/>
-
         </Container>
       </Box>
     </>
