@@ -1,6 +1,7 @@
 import { Text, Link } from '@chakra-ui/react'
+import { InsteadLogin } from '@/@types/types'
 
-function SignLogin (): JSX.Element {
+function SignLogin ({ linkSign }: InsteadLogin): JSX.Element {
   return (
     <>
       <Text
@@ -13,7 +14,7 @@ function SignLogin (): JSX.Element {
           color='primary'
           fontWeight='500'
           _hover={{ textDecoration: 'none' }}
-          href='#'> Sign in instead</Link></Text>
+          href={linkSign}> Sign in instead</Link></Text>
     </>
   )
 }
