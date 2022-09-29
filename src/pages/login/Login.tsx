@@ -30,7 +30,7 @@ function Login (): JSX.Element {
 
             <Button variant='btnForm'>LOGIN</Button>
 
-            <SignLogin />
+            <SignLogin linkSign='/register' />
 
             <DivisionLine />
 

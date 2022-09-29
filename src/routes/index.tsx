@@ -5,6 +5,7 @@ const PasswordRecovery = lazy(async () => await import('@/pages/passwordRecovery
 const Login = lazy(async () => await import('@/pages/login/Login'))
 const Home = lazy(async () => await import('@/pages/Home'))
 const Register = lazy(async () => await import('@/pages/register/register'))
+const NotFound = lazy(async () => await import('@/pages/notFound/notFound'))
 
 function AppRoute (): JSX.Element {
   return (
@@ -14,6 +15,7 @@ function AppRoute (): JSX.Element {
           <Route path="/login" element={<Login />} />
           <Route path="/password-recovery" element={<PasswordRecovery />} />
           <Route path="/register" element={<Register />} />
+          <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   )

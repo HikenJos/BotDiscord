@@ -13,4 +13,8 @@ interface Remenber {
   forgot: string
 }
 
-export { TypeComponent, Data, Remenber }
+interface InsteadLogin {
+  linkSign: string
+}
+
+export { TypeComponent, Data, Remenber, InsteadLogin }

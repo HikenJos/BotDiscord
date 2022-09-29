@@ -53,7 +53,7 @@ function Register (): JSX.Element {
 
             <Button variant='btnForm'>SIGN UP</Button>
 
-            <SignLogin />
+            <SignLogin linkSign='/login' />
 
             <DivisionLine />
 
