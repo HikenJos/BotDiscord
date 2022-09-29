@@ -21,11 +21,12 @@ function Login (): JSX.Element {
             zIndex='4'
             bg='gray.100'>
 
-            <HeaderLogin />
+            <HeaderLogin title='Welcome to BotDiscord! 👋'
+              description='Please sign-in to your account and start the adventure'/>
 
             <InputLogin />
 
-            <RemenberLogin />
+            <RemenberLogin textCheck='Remember Me' linkCheck='' linkForgot='none' />
 
             <Button variant='btnForm'>LOGIN</Button>
 

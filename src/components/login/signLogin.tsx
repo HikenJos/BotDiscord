@@ -13,7 +13,7 @@ function SignLogin (): JSX.Element {
           color='primary'
           fontWeight='500'
           _hover={{ textDecoration: 'none' }}
-          href='#'> Sign in instead</Link></Text>
+          href='/register'> Sign in instead</Link></Text>
     </>
   )
 }

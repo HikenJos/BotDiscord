@@ -1,4 +1,4 @@
-import { Button, Box, Container, Input } from '@chakra-ui/react'
+import { Button, Box, Container, Input, Link } from '@chakra-ui/react'
 import { DivisionLine, HeaderLogin, BgCustom } from '@/components'
 
 function PasswordRecovery (): JSX.Element {
@@ -36,9 +36,14 @@ function PasswordRecovery (): JSX.Element {
 
             <DivisionLine />
 
-            <Button variant="btnTransparent">CREATE NEW ACCOUNT</Button>
-
-            <Button variant="btnBack">BACK TO LOGIN</Button>
+            <Link href='/register'
+              _hover={{ textDecoration: 'none' }}>
+              <Button variant="btnTransparent">CREATE NEW ACCOUNT</Button>
+            </Link>
+            <Link href='/login'
+              _hover={{ textDecoration: 'none' }}>
+              <Button variant="btnBack">BACK TO LOGIN</Button>
+            </Link>
           </Container>
         </Box>
       </BgCustom>

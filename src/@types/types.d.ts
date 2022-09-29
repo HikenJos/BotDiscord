@@ -2,4 +2,15 @@ interface TypeComponent {
   children: JSX.Element | JSX.Element[]
 }
 
-export { TypeComponent }
+interface Data {
+  title: string
+  description: string
+}
+
+interface Remenber {
+  textCheck: string
+  linkCheck: string
+  linkForgot: string
+}
+
+export { TypeComponent, Data, Remenber }
