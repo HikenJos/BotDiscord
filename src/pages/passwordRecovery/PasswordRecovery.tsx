@@ -1,5 +1,5 @@
-import { Button, Box, Container, Input } from '@chakra-ui/react'
-import { DivisionLine, HeaderLogin, BgCustom } from '@/components'
+import { Button, Box, Container } from '@chakra-ui/react'
+import { DivisionLine, HeaderLogin, BgCustom, InputForm } from '@/components'
 
 function PasswordRecovery (): JSX.Element {
   return (
@@ -24,13 +24,7 @@ function PasswordRecovery (): JSX.Element {
           >
             <HeaderLogin />
 
-            <Input
-              type='email'
-              placeholder='Email'
-              fontSize='1.4rem'
-              textStyle='input'
-              focusBorderColor='primary'
-            />
+            <InputForm />
 
             <Button variant="btnForm">SEND VERIFICATION CODE</Button>
 
