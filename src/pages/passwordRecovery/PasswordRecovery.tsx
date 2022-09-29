@@ -22,7 +22,7 @@ function PasswordRecovery (): JSX.Element {
             bg="gray.100"
             position="relative"
           >
-            <HeaderLogin />
+            <HeaderLogin title='' description='' />
 
             <Input
               type='email'
