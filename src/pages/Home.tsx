@@ -33,7 +33,7 @@ function Home (): JSX.Element {
                       mb='3.2rem' mt='1.6rem'>Improve the game administration experience of your server through our MasterBot !!</Text>
                   </Box>
                 <Link href='/login' _hover={{ textDecoration: 'none' }}>
-                    <Button variant='btnForm' w='sm'>Let's get started</Button>
+                  <Button variant='btnForm' w='sm'>Let&#39;s get started</Button>
                   </Link>
                 </VStack>
                 <Image src={ImageBot} height='2xl' />
