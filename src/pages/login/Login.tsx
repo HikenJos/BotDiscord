@@ -26,7 +26,7 @@ function Login (): JSX.Element {
 
             <InputLogin />
 
-            <RemenberLogin textCheck='Remember Me' linkCheck='' linkForgot='none' />
+            <RemenberLogin textCheck='Remember Me' linkCheck='' forgot='' />
 
             <Button variant='btnForm'>LOGIN</Button>
 

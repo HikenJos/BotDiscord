@@ -10,7 +10,7 @@ interface Data {
 interface Remenber {
   textCheck: string
   linkCheck: string
-  linkForgot: string
+  forgot: string
 }
 
 export { TypeComponent, Data, Remenber }

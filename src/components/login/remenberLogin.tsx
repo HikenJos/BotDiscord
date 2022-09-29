@@ -1,7 +1,7 @@
 import { Flex, Checkbox, Spacer, Link } from '@chakra-ui/react'
 import { Remenber } from '@/@types/types'
 
-function RemenberLogin ({ textCheck, linkCheck, linkForgot }: Remenber): JSX.Element {
+function RemenberLogin ({ textCheck, linkCheck, forgot }: Remenber): JSX.Element {
   return (
     <>
       <Flex mb='2rem'>
@@ -20,7 +20,7 @@ function RemenberLogin ({ textCheck, linkCheck, linkForgot }: Remenber): JSX.Ele
           fontSize='1.2rem'
           _hover={{ textDecoration: 'none' }}
           href='/password-recovery'
-          display={linkForgot}>Forgot Password?</Link>
+          display={forgot}>Forgot Password?</Link>
       </Flex>
     </>
   )

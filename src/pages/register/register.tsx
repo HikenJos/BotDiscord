@@ -49,7 +49,7 @@ function Register (): JSX.Element {
               name='loginPass'
             />
 
-            <RemenberLogin textCheck='I agree to' linkCheck='privacy policy & terms' linkForgot='none' />
+            <RemenberLogin textCheck='I agree to' linkCheck='privacy policy & terms' forgot='none' />
 
             <Button variant='btnForm'>SIGN UP</Button>
 
