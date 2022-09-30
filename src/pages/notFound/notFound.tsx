@@ -1,4 +1,4 @@
-import { Image, Box, Container, Heading } from '@chakra-ui/react'
+import { Image, Box, Container, Heading, Link } from '@chakra-ui/react'
 import { BgCustom } from '@/components'
 import ImageNotFound from '@/assets/notFound.svg'
 
@@ -32,7 +32,7 @@ function NotFound (): JSX.Element {
               top='8.5rem'
               lineHeight='4rem'
               textShadow='dark-lg'>Nada por aquí, nada por allá <br></br>
-              Y si nos vamos al Home?</Heading>
+              Y si nos vamos al <Link color='primary' href='/' _hover={{ textDecoration: 'none' }}>Home</Link>?</Heading>
             <Image src={ImageNotFound}></Image>
           </Container>
         </Box>
