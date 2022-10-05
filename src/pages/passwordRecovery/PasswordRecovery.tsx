@@ -1,5 +1,6 @@
 import { Button, Box, Container, Link } from '@chakra-ui/react'
 import { DivisionLine, HeaderLogin, BgCustom, InputForm } from '@/components'
+import { Link as Linker } from 'react-router-dom'
 
 function PasswordRecovery (): JSX.Element {
   return (
@@ -30,11 +31,15 @@ function PasswordRecovery (): JSX.Element {
 
             <DivisionLine />
 
-            <Link href='/register'
+            <Link
+              as={Linker}
+              to='/register'
               _hover={{ textDecoration: 'none' }}>
               <Button variant="btnTransparent">CREATE NEW ACCOUNT</Button>
             </Link>
-            <Link href='/login'
+            <Link
+              as={Linker}
+              to='/login'
               _hover={{ textDecoration: 'none' }}>
               <Button variant="btnBack">BACK TO LOGIN</Button>
             </Link>

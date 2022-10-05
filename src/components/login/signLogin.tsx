@@ -1,6 +1,6 @@
 import { Text, Link } from '@chakra-ui/react'
 import { InsteadLogin } from '@/@types/types'
-
+import { Link as Linker } from 'react-router-dom'
 function SignLogin ({ linkSign }: InsteadLogin): JSX.Element {
   return (
     <>
@@ -11,10 +11,11 @@ function SignLogin ({ linkSign }: InsteadLogin): JSX.Element {
         variant='inputForm'
       >Already have an account?
         <Link
+          as={Linker}
           color='primary'
           fontWeight='500'
           _hover={{ textDecoration: 'none' }}
-          href={linkSign}> Sign in instead</Link></Text>
+          to={linkSign}> Sign in instead</Link></Text>
     </>
   )
 }

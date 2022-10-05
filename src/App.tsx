@@ -1,11 +1,15 @@
+import { Suspense } from 'react'
 import { BrowserRouter } from 'react-router-dom'
+import { Loader } from '@/components'
 import AppRoute from './routes'
 
 function App (): JSX.Element {
   return (
-    <BrowserRouter>
-      <AppRoute />
-    </BrowserRouter>
+    <Suspense fallback={<Loader />}>
+      <BrowserRouter>
+        <AppRoute />
+      </BrowserRouter>
+    </Suspense>
   )
 }
 

@@ -57,7 +57,7 @@ function Register (): JSX.Element {
               onChange={handleChangePassword}
             />
             {alertPassword}
-            <RemenberLogin textCheck='I agree to' linkCheck='privacy policy & terms' forgot='none' />
+            <RemenberLogin textCheck='I agree to &#160;' linkCheck='privacy policy & terms' forgot='none' />
 
             <SignLogin linkSign='/login' />
 

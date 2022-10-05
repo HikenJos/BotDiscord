@@ -1,6 +1,7 @@
 import { Box, Container, Text, Image, Button, Heading, VStack, SimpleGrid, Link } from '@chakra-ui/react'
 import { BgCustom } from '@/components'
 import ImageBot from '../assets/bot.svg'
+import { Link as Linker } from 'react-router-dom'
 
 function Home (): JSX.Element {
   return (
@@ -32,7 +33,8 @@ function Home (): JSX.Element {
                     <Text fontSize='2rem'
                       mb='3.2rem' mt='1.6rem'>Improve the game administration experience of your server through our MasterBot !!</Text>
                   </Box>
-                <Link href='/login' _hover={{ textDecoration: 'none' }}>
+                <Link as={Linker}
+                  to='/login' _hover={{ textDecoration: 'none' }}>
                   <Button variant='btnForm' w='sm'>Let&#39;s get started</Button>
                   </Link>
                 </VStack>
