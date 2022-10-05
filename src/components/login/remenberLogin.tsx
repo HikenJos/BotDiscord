@@ -10,6 +10,7 @@ import {
   useDisclosure,
   Button
 } from '@chakra-ui/react'
+import { Link as Linker } from 'react-router-dom'
 import { Remenber } from '@/@types/types'
 import { useRef } from 'react'
 import disabledButton from '@/functions/disableButton'
@@ -27,15 +28,11 @@ function RemenberLogin ({ textCheck, linkCheck, forgot }: Remenber): JSX.Element
           <ModalBody p='2.5rem' bg='gray.100' rounded='lg'>
           <ModalHeader as='h1' fontSize='3xl' textAlign='center' color='font' fontWeight='700'>PRIVACCY POLICY & TERMS</ModalHeader>
           <ModalCloseButton />
-            <Text textAlign='justify' color='font' lineHeight='4rem'>MasterBot pone a disposición de los Usuarios o Clientes los presentes Términos y
-              Condiciones de la administración de bot denominado “Master Bot” (en adelante “Los Servicios”),
-              el cual es ofrecido a Clientes, conjuntamente (en adelante “Las Partes”).  LOS PRESENTES TÉRMINOS Y
-              CONDICIONES TIENEN UN CAR QUE NO ACEPTE LOS PRESENTES  CARÁCTER OBLIGATORIO Y VINCULANTE. CUALQUIER
-              PERSONA TÉRMINOS Y CONDICIONES GENERALES DEBER SERVICIOS. Previo a realizar la inscripción  ABSTENERSE
-              DE UTILIZAR como Usuario y/o Cliente (en adelante indistintamente el &quot;Usuario&quot; o el &quot;Administador&quot;),
-              el Usuario debe leer, entender y aceptar todas las condiciones establecidas en los presentes Términos
-              y Condiciones, en el Aviso de Privacidad, en la administración, así como en los demás documentos incorporados
-              a los mismos por referencia.</Text>
+            <Text textAlign='justify' color='font' lineHeight='4rem'>MasterBot makes available to Users or Clients these Terms and Conditions for the administration of the bot called “Master Bot”
+              (hereinafter “The Services”), which is offered to Clients, jointly (hereinafter “The Parties”). THE PRESENT TERMS AND CONDITIONS
+              HAVE A CAR THAT DOES NOT ACCEPT THESE MANDATORY AND BINDING NATURE. ANY PERSON GENERAL TERMS AND CONDITIONS DUTY SERVICES. Prior to registering, REFRAIN FROM USING as a User and/or
+              Client (hereinafter indistinctly the “User” or the “Administrator”), the User must read, understand and accept all the conditions established in these Terms and Conditions, in
+              the Privacy Notice, in the administration, as well as in the other documents incorporated therein by reference.</Text>
           </ModalBody>
         </ModalContent>
       </Modal>
@@ -47,17 +44,20 @@ function RemenberLogin ({ textCheck, linkCheck, forgot }: Remenber): JSX.Element
           color='font'
           onChange={() => disabledButton(CheckBx, btnRegister)}
           ref={CheckBx}
-        >{textCheck} <Link
+        >{textCheck}</Checkbox>
+        <Link
+          color='primary'
+          fontSize='1.2rem'
+          _hover={{ textDecoration: 'none' }}
+          onClick={onOpen}>{linkCheck}</Link>
+        <Spacer />
+          <Link
+            as={Linker}
+            to='/password-recovery'
             color='primary'
             fontSize='1.2rem'
             _hover={{ textDecoration: 'none' }}
-            onClick={onOpen}>{linkCheck}</Link></Checkbox>
-        <Spacer />
-        <Link color='primary'
-          fontSize='1.2rem'
-          _hover={{ textDecoration: 'none' }}
-          href='/password-recovery'
-          display={forgot}>Forgot Password?</Link>
+            display={forgot}>Forgot Password?</Link>
       </Flex>
       <Button variant='btnForm' ref={btnRegister} disabled>SIGN UP</Button>
     </>
