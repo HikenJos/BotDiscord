@@ -1,24 +1,12 @@
 import { useState } from 'react'
 import { Input } from '@chakra-ui/react'
-import emailValidation from '@/functions/emailValidation'
-import { AlertEmailFail, AlertEmailTrue } from '../alerts/alert'
+import useInputValidation from '@/hooks/useInput'
 
 function InputLogin (): JSX.Element {
-  const [loginEmail, setloginEmail] = useState('')
+  const { value: loginEmail, alert: alertEmail, handleChange: HandleChangeEmail } = useInputValidation()
   const [loginPass, setloginPass] = useState('')
-  const [alert2, setalert] = useState<JSX.Element>()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    if (e.target.name === 'loginEmail') {
-      if (emailValidation(loginEmail)) {
-        const alert = (): JSX.Element => { return <AlertEmailTrue /> }
-        setalert(alert)
-      } else {
-        const alert = (): JSX.Element => { return <AlertEmailFail /> }
-        setalert(alert)
-      }
-      setloginEmail(e.target.value)
-    }
     if (e.target.name === 'loginPass') {
       setloginPass(e.target.value)
     }
@@ -33,9 +21,9 @@ function InputLogin (): JSX.Element {
         focusBorderColor='primary'
         name='loginEmail'
         value={loginEmail}
-        onChange={handleChange}
+        onChange={HandleChangeEmail}
       />
-      {alert2}
+      {alertEmail}
       <Input
         type='password'
         placeholder='Enter password'

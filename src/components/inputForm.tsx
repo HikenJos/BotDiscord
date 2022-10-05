@@ -1,24 +1,9 @@
-import emailValidation from '@/functions/emailValidation'
 import { Input } from '@chakra-ui/react'
-import { useState } from 'react'
-import { AlertEmailFail, AlertEmailTrue } from './alerts/alert'
+import useInputValidation from '@/hooks/useInput'
 
 function InputForm (): JSX.Element {
-  const [emailRecovery, setEmailRecovery] = useState('')
-  const [alert, setAlert] = useState<JSX.Element>()
+  const { value: emailRecovery, alert: alertEmail, handleChange: handleChangeRecovery } = useInputValidation()
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    if (e.target.name === 'emailRecovery') {
-      if (emailValidation(emailRecovery)) {
-        const alert = (): JSX.Element => { return <AlertEmailTrue /> }
-        setAlert(alert)
-      } else {
-        const alert = (): JSX.Element => { return <AlertEmailFail /> }
-        setAlert(alert)
-      }
-      setEmailRecovery(e.target.value)
-    }
-  }
   return (
     <>
       <Input
@@ -29,9 +14,9 @@ function InputForm (): JSX.Element {
         focusBorderColor='primary'
         name='emailRecovery'
         value={emailRecovery}
-        onChange={handleChange}
+        onChange={handleChangeRecovery}
       />
-      {alert}
+      {alertEmail}
     </>
   )
 }

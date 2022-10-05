@@ -7,7 +7,7 @@ function useInputValidation (): { value: string, alert: JSX.Element, handleChang
   const [alert, setAlert] = useState<JSX.Element>()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    if (e.target.name === 'registerEmail') {
+    if (e.target.name === 'registerEmail' || e.target.name === 'loginEmail' || e.target.name === 'emailRecovery') {
       if (emailValidation(value)) {
         const alert2 = (): JSX.Element => { return <AlertEmailTrue /> }
         setAlert(alert2)
