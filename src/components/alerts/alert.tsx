@@ -27,4 +27,22 @@ function AlertPasswordFail (): JSX.Element {
   )
 }
 
-export { AlertEmailFail, AlertEmailTrue, AlertPasswordFail }
+function AlertPasswordLengthFail (): JSX.Element {
+  return (
+    <Alert status='error' mb={5}>
+      <AlertIcon />
+      <AlertTitle>Your pass must have at least 6 characters</AlertTitle>
+    </Alert>
+  )
+}
+
+function AlertPasswordLengthGood (): JSX.Element {
+  return (
+    <Alert status='success' mb={5}>
+      <AlertIcon />
+      <AlertTitle>Your password looks good!</AlertTitle>
+    </Alert>
+  )
+}
+
+export { AlertEmailFail, AlertEmailTrue, AlertPasswordFail, AlertPasswordLengthFail, AlertPasswordLengthGood }

@@ -1,7 +1,10 @@
 import { BgCustom, DivisionLine, HeaderLogin, IconFooter, RemenberLogin, SignLogin } from '@/components'
-import { Button, Box, Container, Input } from '@chakra-ui/react'
+import useInputValidation from '@/hooks/useInput'
+import { Box, Container, Input } from '@chakra-ui/react'
 
 function Register (): JSX.Element {
+  const { value: emailRegister, alert: alertEmail, handleChange: handleChangeEmail } = useInputValidation()
+  const { value: passwordRegister, alert: alertPassword, handleChange: handleChangePassword } = useInputValidation()
   return (
     <>
       <BgCustom>
@@ -38,20 +41,23 @@ function Register (): JSX.Element {
               fontSize='1.4rem'
               textStyle='input'
               focusBorderColor='primary'
-              name='loginEmail'
+              name='registerEmail'
+              value={emailRegister}
+              onChange={handleChangeEmail}
             />
+            {alertEmail}
             <Input
               type='password'
               placeholder='Password'
               fontSize='1.4rem'
               textStyle='input'
               focusBorderColor='primary'
-              name='loginPass'
+              name='registerPass'
+              value={passwordRegister}
+              onChange={handleChangePassword}
             />
-
+            {alertPassword}
             <RemenberLogin textCheck='I agree to' linkCheck='privacy policy & terms' forgot='none' />
-
-            <Button variant='btnForm'>SIGN UP</Button>
 
             <SignLogin linkSign='/login' />
 
