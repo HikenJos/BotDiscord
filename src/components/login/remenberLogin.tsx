@@ -7,12 +7,17 @@ import {
   ModalBody,
   ModalCloseButton,
   Text,
-  useDisclosure
+  useDisclosure,
+  Button
 } from '@chakra-ui/react'
 import { Remenber } from '@/@types/types'
+import { useRef } from 'react'
+import disabledButton from '@/functions/disableButton'
 
 function RemenberLogin ({ textCheck, linkCheck, forgot }: Remenber): JSX.Element {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const CheckBx = useRef<HTMLInputElement>(null)
+  const btnRegister = useRef(null)
 
   return (
     <>
@@ -34,13 +39,14 @@ function RemenberLogin ({ textCheck, linkCheck, forgot }: Remenber): JSX.Element
           </ModalBody>
         </ModalContent>
       </Modal>
-
       <Flex mb='2rem'>
         <Checkbox
           size='lg'
           iconSize='2rem'
           colorScheme='purple'
           color='font'
+          onChange={() => disabledButton(CheckBx, btnRegister)}
+          ref={CheckBx}
         >{textCheck} <Link
             color='primary'
             fontSize='1.2rem'
@@ -53,6 +59,7 @@ function RemenberLogin ({ textCheck, linkCheck, forgot }: Remenber): JSX.Element
           href='/password-recovery'
           display={forgot}>Forgot Password?</Link>
       </Flex>
+      <Button variant='btnForm' ref={btnRegister} disabled>SIGN UP</Button>
     </>
   )
 }
